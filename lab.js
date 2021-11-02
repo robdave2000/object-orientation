@@ -284,7 +284,29 @@ newWizard.castSpell();
 */
 
 //Code Here
+class Phone
+{
+  constructor (brand, model, storage, color, price)
+  {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
 
+  sell()
+  {
+    this.sold = true;
+    console.log(this.brand + " " + this.model + " has been sold");
+  }
+
+  priceChange (newPrice)
+  {
+    this.price = newPrice;
+  }
+}
   
 /*
     Next make three new phone instances using your class.
@@ -297,6 +319,9 @@ newWizard.castSpell();
 */
 
 //Code Here
+let newPhone1 = new Phone ("Samsung", "S21", 256, "Black", 799);
+let newPhone2 = new Phone ("Apple", "IPhone 12", 256, "White", 899);
+let newPhone3 = new Phone ("Google", "Pixel 3", 128, "Black", 499);
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -306,7 +331,7 @@ newWizard.castSpell();
 */ 
 
 //Code Here 
-
+newPhone3.priceChange(449);
 
 /*
   Now call the sell method on one of your other phone objects
@@ -315,7 +340,8 @@ newWizard.castSpell();
 */
 
 //Code Here 
-
+newPhone1.sell();
+console.log(newPhone1.sold);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 

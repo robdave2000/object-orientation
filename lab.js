@@ -360,8 +360,10 @@ const colors = {
 //do not edit this object
 
 //Code Here 
-
-
+let colorsCopy = 
+{
+  ...colors
+}
 
 /*
  Now use the spread operator to combine the following 2 objects into one. 
@@ -388,10 +390,14 @@ const shippingInfo = {
 //do not edit the objects above
 
 //Code Here
-
+let helensInfo = 
+{
+  ...contactInfo,
+  ...shippingInfo
+}
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
-
+console.log(helensInfo);
 
 //////////////////////////// PROBLEM 16 ////////////////////////////
 

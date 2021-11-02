@@ -162,8 +162,22 @@ console.log(totalPopulation(popCount));
 */
 
 //Code Here
+function ingredients(obj)
+{
+  let {carb} = obj;
+  let {fat} = obj;
+  let {protein} = obj;
 
+  let newArray = [carb, fat, protein]
+  return newArray;
+}
+var ingredientList = {
+  carb: "Pasta",
+  fat: "Butter",
+  protein: "Bacon"
+};
 
+console.log(ingredients(ingredientList));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.

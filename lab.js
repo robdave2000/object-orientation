@@ -220,8 +220,18 @@ console.log(user);
 */
 
 //Code here
+class Cat
+{
+  constructor (name, color, age)
+  {
+    this.name = name;
+    this.color = color;
+    this.age = age;
+  }
+}
 
-
+let newCat = new Cat ("Sushi", "Black", 1);
+console.log(newCat.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*

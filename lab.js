@@ -113,7 +113,9 @@ console.log(color + " " + year + " " + make + " " + model);
 
 function greeting( obj ) {
   //Code Here
-  
+  let {title} = obj;
+  let {firstName} = obj;
+  let {lastName} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -132,8 +134,22 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation(obj)
+{
+  let {utah} = obj;
+  let {california} = obj;
+  let {texas} = obj;
+  let {arizona} = obj;
+  return utah + california + texas + arizona;
+}
+var popCount = {
+  utah: 6,
+  california: 7,
+  texas: 8,
+  arizona: 9
+};
 
-
+console.log(totalPopulation(popCount));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
